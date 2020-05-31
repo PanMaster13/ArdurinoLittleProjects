@@ -14,3 +14,5 @@ References:
 LED - https://www.circuitbasics.com/arduino-basics-controlling-led/
 LDR - https://maker.pro/arduino/tutorial/how-to-use-an-ldr-sensor-with-arduino
 LM35 - https://create.arduino.cc/projecthub/infoelectorials/project-003-arduino-lm35-temperature-sensor-project-0a43ba
+
+Arduino will be connected to Pi via serial, and data is sent to AWS IoT Core to be processed.

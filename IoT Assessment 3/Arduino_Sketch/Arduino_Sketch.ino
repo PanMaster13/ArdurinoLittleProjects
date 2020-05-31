@@ -7,6 +7,9 @@ int ldrSensorPin = 0;
 int tempLed = 13;
 int ldrLed = 12;
 
+char tempString[5];
+String ldrString;
+
 void setup() {
   pinMode(tempLed, OUTPUT);
   pinMode(ldrLed, OUTPUT);
@@ -21,12 +24,14 @@ void loop() {
 
   // Obtain value from LDR
   ldrSensorValue = analogRead(ldrSensorPin);
-
-  Serial.print("Temperature = ");
-  Serial.print(cel);
-  Serial.println("*C");
-  Serial.print("LDR Value = ");
-  Serial.println(ldrSensorValue);
+  
+  // Send values to Pi
+  dtostrf(cel, 2, 2, tempString);
+  String data = tempString;
+  data += "-";
+  ldrString = String(ldrSensorValue);
+  data += ldrString;
+  Serial.println(data);
 
   if (cel > 30){
     digitalWrite(13, HIGH);
@@ -39,5 +44,5 @@ void loop() {
     digitalWrite(12, LOW);
   }
   
-  delay(1000);
+  delay(5000);
 }

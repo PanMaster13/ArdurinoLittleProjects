@@ -1,0 +1,15 @@
+body{
+    background-color: aqua;
+}
+
+.displayBox{
+    background-color: aliceblue;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+
+.displayBox:hover{
+    border: 1px solid black;
+}

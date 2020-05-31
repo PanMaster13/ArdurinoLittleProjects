@@ -1,0 +1,9 @@
+region: us
+account: 520968389503
+
+QuickSight Account name: WeatherMonitoring
+region: US West (Oregon)
+
+command to run python script:
+python3 python_script.py -e avanbr6qd5dl0-ats.iot.us-west-2.amazonaws.com -r AmazonRootCA1.pem -c certificate.pem.crt -k private_key.pem.key -p 8883 -id WeatherMonitorThing -n WeatherMonitorThing
+
