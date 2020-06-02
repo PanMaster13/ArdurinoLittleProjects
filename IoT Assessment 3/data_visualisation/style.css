@@ -4,6 +4,7 @@ body{
 
 .displayBox{
     background-color: aliceblue;
+	border: 1px solid aliceblue;
     margin: 5%;
     padding: 2%;
     border-radius: 5%;

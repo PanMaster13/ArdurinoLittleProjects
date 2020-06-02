@@ -21,7 +21,7 @@ void loop() {
   tempSensorValue = analogRead(tempSensorPin);
   float mv = (tempSensorValue/1024.0) * 5000;
   float cel = mv/10;
-
+  
   // Obtain value from LDR
   ldrSensorValue = analogRead(ldrSensorPin);
   
